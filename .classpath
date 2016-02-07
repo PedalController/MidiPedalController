@@ -7,6 +7,7 @@
 	<classpathentry kind="src" path="multistomp"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="src" path="main"/>
+	<classpathentry kind="src" path="zoom"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/com.eclipsesource.json"/>

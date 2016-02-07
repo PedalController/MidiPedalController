@@ -3,14 +3,12 @@ package br.com.srmourasilva.multistomp.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sound.midi.MidiUnavailableException;
-import javax.sound.midi.SysexMessage;
-
 import br.com.srmourasilva.architecture.exception.DeviceNotFoundException;
-import br.com.srmourasilva.domain.OnMultistompListener;
+import br.com.srmourasilva.architecture.exception.DeviceUnavailableException;
 import br.com.srmourasilva.domain.message.Messages;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
-import br.com.srmourasilva.multistomp.connection.MidiConnection;
+import br.com.srmourasilva.domain.multistomp.OnMultistompListener;
+import br.com.srmourasilva.multistomp.connection.Connection;
 import br.com.srmourasilva.multistomp.simulator.Log;
 
 public class PedalController {
@@ -20,12 +18,12 @@ public class PedalController {
 
 	private Multistomp pedal;
 
-	private MidiConnection connection;
+	private Connection connection;
 
 	private List<OnMultistompListener> controllerListeners = new ArrayList<>();
 	private List<OnMultistompListener> realMultistompListeners = new ArrayList<>();
 
-	public PedalController(Multistomp pedal, MidiConnection conection) throws DeviceNotFoundException {
+	public PedalController(Multistomp pedal, Connection conection) throws DeviceNotFoundException {
 		this.started = false;
 
 		this.pedal = pedal;
@@ -55,7 +53,7 @@ public class PedalController {
 
 	/** Turn on and inicialize the pedal
 	 */
-	public final void on() throws MidiUnavailableException {
+	public final void on() throws DeviceUnavailableException {
 		if (started)
 			return;
 
@@ -155,11 +153,6 @@ public class PedalController {
 	private void notify(List<OnMultistompListener> listeners, Messages messages) {
 		for (OnMultistompListener listener : listeners)
 			listener.onChange(messages);
-	}
-
-	@Deprecated
-	public void sendMessage(SysexMessage sysexMessage) {
-		this.connection.send(sysexMessage);
 	}
 	
 	public void send(Messages messages) {

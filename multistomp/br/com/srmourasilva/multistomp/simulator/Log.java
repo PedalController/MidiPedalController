@@ -1,8 +1,8 @@
 package br.com.srmourasilva.multistomp.simulator;
 
-import br.com.srmourasilva.domain.OnMultistompListener;
 import br.com.srmourasilva.domain.message.Messages;
 import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.multistomp.OnMultistompListener;
 
 public class Log implements OnMultistompListener {
 	

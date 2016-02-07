@@ -3,12 +3,13 @@ package br.com.srmourasilva.main;
 import java.util.Scanner;
 
 import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.SysexMessage;
 
 import br.com.srmourasilva.architecture.exception.DeviceNotFoundException;
+import br.com.srmourasilva.architecture.exception.DeviceUnavailableException;
 import br.com.srmourasilva.multistomp.controller.PedalController;
 import br.com.srmourasilva.multistomp.controller.PedalControllerFactory;
+import br.com.srmourasilva.multistomp.zoom.ZoomG3Type;
 import br.com.srmourasilva.multistomp.zoom.gseries.ZoomGSeriesMessages;
 
 public class KeyboardController {
@@ -42,14 +43,14 @@ public class KeyboardController {
 
 		try {
 			//this.pedal = PedalControllerFactory.getPedal(PedalType.G2Nu);
-			pedal = PedalControllerFactory.searchPedal();
+			pedal = PedalControllerFactory.generateControllerFor(ZoomG3Type.class);
 			//pedal.addListener(message -> System.out.println(message));
 			pedal.on();
 
 		} catch (DeviceNotFoundException e) {
 			System.out.println("Pedal not found! You connected any?");
 			System.exit(1);
-		} catch (MidiUnavailableException e) {
+		} catch (DeviceUnavailableException e) {
 			System.out.println("This Pedal has been used by other process program");
 			System.exit(1);
 		}
@@ -131,7 +132,8 @@ public class KeyboardController {
 				(byte) 0x06, (byte) 0x01, (byte) 0xF7
 			};
 			
-			pedal.sendMessage(customMessage(WHAT));
+			// FIXME
+			//pedal.sendMessage(customMessage(WHAT));
 		}
 	}
 

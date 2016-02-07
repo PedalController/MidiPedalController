@@ -78,7 +78,7 @@ How to use:
 
 ```java
 // Throws DeviceNotFoundException if not found
-PedalController multistomp = PedalControllerFactory.searchPedal();
+PedalController multistomp = PedalControllerFactory.generateControllerFor(ZoomG3Type.class);
 
 // Init the system (not your pedal)
 // Throws MidiUnavailableException
@@ -99,7 +99,7 @@ multistomp.disableEffect(1);
 // Set Patch
 multistomp.beforePatch();
 multistomp.nextPatch();
-multistomp.setPatch(99);
+multistomp.toPatch(99);
 
 System.out.println(multistomp);
 

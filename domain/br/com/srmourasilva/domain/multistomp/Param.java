@@ -2,7 +2,6 @@ package br.com.srmourasilva.domain.multistomp;
 
 import java.util.Optional;
 
-import br.com.srmourasilva.domain.OnMultistompListener;
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
 import br.com.srmourasilva.domain.message.Messages.Details;
