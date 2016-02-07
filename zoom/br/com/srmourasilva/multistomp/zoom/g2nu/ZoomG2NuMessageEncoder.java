@@ -31,7 +31,7 @@ public class ZoomG2NuMessageEncoder implements MessageEncoder {
 		 		 .generate(encodeEffectChange(CommonCause.EFFECT_ACTIVE));
 		generator.forEachOfType(CommonCause.EFFECT_DISABLE)
 				 .generate(encodeEffectChange(CommonCause.EFFECT_DISABLE));
-
+		
 		return generator.generateMidiMessages();
 	}
 

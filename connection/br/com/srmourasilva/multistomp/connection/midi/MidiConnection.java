@@ -80,7 +80,7 @@ public class MidiConnection implements Connection, MidiReaderListener {
 		return encoder.encode(messages);
 	}
 
-	public void send(MidiMessage message) {
+	private void send(MidiMessage message) {
 		System.out.println("MIDI sended: ");
 		System.out.println(" " + BinaryUtil.byteArrayToHex(message.getMessage()));
 

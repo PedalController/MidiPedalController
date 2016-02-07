@@ -29,7 +29,7 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 		generator.forEachOfType(CommonCause.PARAM_VALUE)
 		 		 .generate(setParam());
 		
-		generator.forEachOfType(ZoomGSeriesCause.SET_EFFECT)
+		generator.forEachOfType(CommonCause.EFFECT_TYPE)
 				 .generate(setEffect());
 
 		generator.forEachOfType(ZoomGSeriesCause.REQUEST_CURRENT_PATCH_NUMBER)
