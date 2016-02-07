@@ -148,13 +148,13 @@ Understand the structure:
 ### Implement!
 
 1. Create a "Source Folder" that corresponds the real Pedal Company;
-        zoom/
-2. Create a package like: com.yourcompany.multistomp.pedalcompany 
-        br.com.srmourasilva.multistomp.zoom
+        _zoom/_
+2. Create a package like: com.yourcompany.multistomp.pedalcompany; 
+        _br.com.srmourasilva.multistomp.zoom_
 3. Create a *PedalType* implementation. This will use @Pedal annotation;
-        ZoomG3Type
+        _ZoomG3Type_
 4. Create the *MessageEncoder* and *MessageDecoder* implementations;
-        ZoomGSeriesEncoder and ZoomGSeriesEncoder  
+        _ZoomGSeriesEncoder and ZoomGSeriesEncoder_  
 5. Use the *MidiConnection* or implements the specific pedal **Connection**. 
 
 
