@@ -145,19 +145,18 @@ Understand the structure:
 * Test: Unit tests;
 * Main: User demonstrations.
 
-### Define
+### Implement!
 
-1. Add PedalCompany in controller.PedalCompany.java;
-2. Add "if" for your pedal company in controller.PedalControllerFactory.java;
-3. Add your multistomp definition in domain.PedalType.
+1. Create a "Source Folder" that corresponds the real Pedal Company;
+   ```zoom/```
+2. Create a package like: com.yourcompany.multistomp.pedalcompany 
+   ```br.com.srmourasilva.multistomp.zoom```
+3. Create a *PedalType* implementation. This will use @Pedal annotation;
+   ```ZoomG3Type```
+4. Create the *MessageEncoder* and *MessageDecoder* implementations;
+    ```ZoomGSeriesEncoder and ZoomGSeriesEncoder```  
+5. Use the *MidiConnection* or implements the specific pedal **Connection**. 
 
-### Implement
-
-1. In multistomp, create your pedal package;
-2. Extends domain.Multistomp.java if necessary;
-3. Implements MultistompFactory.java if necessary
-4. Implements MessageEncoder.java for encript the commands in MIDI messages.
-4. Implements MessageDecoder.java for decript the MIDI messages commands.
 
 Thanks for:
 -----------
