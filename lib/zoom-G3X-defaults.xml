@@ -1,0 +1,2409 @@
+<Effects>
+	<Effect name="Comp" offset="953500" category="Dynamics">
+		<Ctrl name="Sense" offset="953552" max="10" default="6"/>
+		<Ctrl name="Tone" offset="953592" max="10" default="6"/>
+		<Ctrl name="Level" offset="953632" max="150" default="100"/>
+		<Ctrl name="ATTCK" offset="953672" max="1" default="0">
+			<PrmTable>
+				<String>Slow</String>
+				<String>Fast</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="RackComp" offset="954220" category="Dynamics">
+		<Ctrl name="THRSH" offset="954272" max="50" default="40"/>
+		<Ctrl name="Ratio" offset="954312" max="9" default="5"/>
+		<Ctrl name="Level" offset="954352" max="150" default="100"/>
+		<Ctrl name="ATTCK" offset="954392" max="9" default="6"/>
+	</Effect>
+	<Effect name="M Comp" offset="953740" category="Dynamics">
+		<Ctrl name="THRSH" offset="953792" max="50" default="40"/>
+		<Ctrl name="Ratio" offset="953832" max="9" default="3"/>
+		<Ctrl name="Level" offset="953872" max="150" default="100"/>
+		<Ctrl name="ATTCK" offset="953912" max="9" default="0"/>
+	</Effect>
+	<Effect name="SlowATTCK" offset="961732" category="Dynamics">
+		<Ctrl name="Time" offset="961784" max="49" default="20"/>
+		<Ctrl name="Curve" offset="961824" max="10" default="10"/>
+		<Ctrl name="Level" offset="961864" max="150" default="100"/>
+	</Effect>
+	<Effect name="ZNR" offset="962132" category="Dynamics">
+		<Ctrl name="THRSH" offset="962184" max="24" default="9"/>
+		<Ctrl name="DETCT" offset="962224" max="1" default="1">
+			<PrmTable>
+				<String>GtrIn</String>
+				<String>EfxIn</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="962264" max="150" default="100"/>
+	</Effect>
+	<Effect name="NoiseGate" offset="967612" category="Dynamics">
+		<Ctrl name="THRSH" offset="967664" max="24" default="9"/>
+		<Ctrl name="Level" offset="967704" max="150" default="100"/>
+	</Effect>
+	<Effect name="DirtyGate" offset="967452" category="Dynamics">
+		<Ctrl name="THRSH" offset="967504" max="24" default="9"/>
+		<Ctrl name="Level" offset="967544" max="150" default="100"/>
+	</Effect>
+	<Effect name="GraphicEQ" offset="929716" category="Filter_EQ">
+		<Ctrl name="160Hz" offset="929768" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="400Hz" offset="929808" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="800Hz" offset="929848" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="3.2kHz" offset="929888" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="6.4kHz" offset="929928" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="12kHz" offset="929968" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="930008" max="150" default="100"/>
+	</Effect>
+	<Effect name="ParaEQ" offset="930076" category="Filter_EQ">
+		<Ctrl name="Freq1" offset="930128" max="30" default="8">
+			<PrmTable>
+				<String>20Hz</String>
+				<String>25Hz</String>
+				<String>32Hz</String>
+				<String>40Hz</String>
+				<String>50Hz</String>
+				<String>63Hz</String>
+				<String>80Hz</String>
+				<String>100Hz</String>
+				<String>125Hz</String>
+				<String>160Hz</String>
+				<String>200Hz</String>
+				<String>250Hz</String>
+				<String>320Hz</String>
+				<String>400Hz</String>
+				<String>500Hz</String>
+				<String>630Hz</String>
+				<String>800Hz</String>
+				<String>1.0kHz</String>
+				<String>1.2kHz</String>
+				<String>1.6kHz</String>
+				<String>2.0kHz</String>
+				<String>2.5kHz</String>
+				<String>3.2kHz</String>
+				<String>4.0kHz</String>
+				<String>5.0kHz</String>
+				<String>6.3kHz</String>
+				<String>8.0kHz</String>
+				<String>10kHz</String>
+				<String>12kHz</String>
+				<String>16kHz</String>
+				<String>20kHz</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Q1" offset="930168" max="5" default="1">
+			<PrmTable>
+				<String>0.5</String>
+				<String>1</String>
+				<String>2</String>
+				<String>4</String>
+				<String>8</String>
+				<String>16</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Gain1" offset="930208" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Freq2" offset="930248" max="30" default="15">
+			<PrmTable>
+				<String>20Hz</String>
+				<String>25Hz</String>
+				<String>32Hz</String>
+				<String>40Hz</String>
+				<String>50Hz</String>
+				<String>63Hz</String>
+				<String>80Hz</String>
+				<String>100Hz</String>
+				<String>125Hz</String>
+				<String>160Hz</String>
+				<String>200Hz</String>
+				<String>250Hz</String>
+				<String>320Hz</String>
+				<String>400Hz</String>
+				<String>500Hz</String>
+				<String>630Hz</String>
+				<String>800Hz</String>
+				<String>1.0kHz</String>
+				<String>1.2kHz</String>
+				<String>1.6kHz</String>
+				<String>2.0kHz</String>
+				<String>2.5kHz</String>
+				<String>3.2kHz</String>
+				<String>4.0kHz</String>
+				<String>5.0kHz</String>
+				<String>6.3kHz</String>
+				<String>8.0kHz</String>
+				<String>10kHz</String>
+				<String>12kHz</String>
+				<String>16kHz</String>
+				<String>20kHz</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Q2" offset="930288" max="5" default="1">
+			<PrmTable>
+				<String>0.5</String>
+				<String>1</String>
+				<String>2</String>
+				<String>4</String>
+				<String>8</String>
+				<String>16</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Gain2" offset="930328" max="24" default="12">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="930368" max="150" default="100"/>
+	</Effect>
+	<Effect name="CombFLTR" offset="941636" category="Filter_EQ">
+		<Ctrl name="Freq" offset="941688" max="49" default="24"/>
+		<Ctrl name="Reso" offset="941728" max="20" default="15">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Mix" offset="941768" max="100" default="30"/>
+		<Ctrl name="HiDMP" offset="941808" max="10" default="6"/>
+		<Ctrl name="Level" offset="941848" max="150" default="100"/>
+	</Effect>
+	<Effect name="AutoWah" offset="959532" category="Filter_EQ">
+		<Ctrl name="Sense" offset="959584" max="19" default="17">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Reso" offset="959624" max="10" default="8"/>
+		<Ctrl name="Level" offset="959664" max="150" default="100"/>
+	</Effect>
+	<Effect name="Resonance" offset="959332" category="Filter_EQ">
+		<Ctrl name="Sense" offset="959384" max="19" default="14">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Reso" offset="959424" max="10" default="8"/>
+		<Ctrl name="Level" offset="959464" max="150" default="100"/>
+	</Effect>
+	<Effect name="Cry" offset="941916" category="Filter_EQ">
+		<Ctrl name="Range" offset="941968" max="9" default="6"/>
+		<Ctrl name="Reso" offset="942008" max="10" default="8"/>
+		<Ctrl name="Sense" offset="942048" max="19" default="16">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Bal" offset="942088" max="100" default="100"/>
+		<Ctrl name="Level" offset="942128" max="150" default="100"/>
+	</Effect>
+	<Effect name="M-Filter" offset="921092" category="Filter_EQ">
+		<Ctrl name="Freq" offset="921144" max="100" default="56"/>
+		<Ctrl name="Sense" offset="921184" max="10" default="5"/>
+		<Ctrl name="Reso" offset="921224" max="10" default="7"/>
+		<Ctrl name="Type" offset="921264" max="2" default="2">
+			<PrmTable>
+				<String>HPF</String>
+				<String>BPF</String>
+				<String>LPF</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Chara" offset="921304" max="1" default="1">
+			<PrmTable>
+				<String>2Pole</String>
+				<String>4Pole</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="VLCTY" offset="921344" max="1" default="0">
+			<PrmTable>
+				<String>Fast</String>
+				<String>Slow</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Bal" offset="921384" max="100" default="100"/>
+		<Ctrl name="Level" offset="921424" max="150" default="100"/>
+	</Effect>
+	<Effect name="Step" offset="947236" category="Filter_EQ">
+		<Ctrl name="Depth" offset="947288" max="100" default="60"/>
+		<Ctrl name="Rate" offset="947328" max="78" default="25"/>
+		<Ctrl name="Reso" offset="947368" max="10" default="8"/>
+		<Ctrl name="Shape" offset="947408" max="10" default="10"/>
+		<Ctrl name="Level" offset="947448" max="150" default="100"/>
+	</Effect>
+	<Effect name="SeqFLTR" offset="937460" category="Filter_EQ">
+		<Ctrl name="Step" offset="937512" max="6" default="6"/>
+		<Ctrl name="PTTRN" offset="937552" max="7" default="6"/>
+		<Ctrl name="Speed" offset="937592" max="77" default="25"/>
+		<Ctrl name="Shape" offset="937632" max="10" default="10"/>
+		<Ctrl name="Reso" offset="937672" max="10" default="10"/>
+		<Ctrl name="Level" offset="937712" max="150" default="100"/>
+	</Effect>
+	<Effect name="RndmFLTR" offset="930436" category="Filter_EQ">
+		<Ctrl name="Speed" offset="930488" max="77" default="34"/>
+		<Ctrl name="Range" offset="930528" max="100" default="50"/>
+		<Ctrl name="Reso" offset="930568" max="10" default="6"/>
+		<Ctrl name="Type" offset="930608" max="2" default="2">
+			<PrmTable>
+				<String>HPF</String>
+				<String>BPF</String>
+				<String>LPF</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Chara" offset="930648" max="1" default="1">
+			<PrmTable>
+				<String>2Pole</String>
+				<String>4Pole</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Bal" offset="930688" max="100" default="90"/>
+		<Ctrl name="Level" offset="930728" max="150" default="100"/>
+	</Effect>
+	<Effect name="Booster" offset="959732" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="959784" max="100" default="80"/>
+		<Ctrl name="Tone" offset="959824" max="100" default="50"/>
+		<Ctrl name="Level" offset="959864" max="150" default="100"/>
+	</Effect>
+	<Effect name="OverDrive" offset="960932" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="960984" max="100" default="60"/>
+		<Ctrl name="Tone" offset="961024" max="100" default="50"/>
+		<Ctrl name="Level" offset="961064" max="150" default="100"/>
+	</Effect>
+	<Effect name="T Scream" offset="961932" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="961984" max="100" default="70"/>
+		<Ctrl name="Tone" offset="962024" max="100" default="50"/>
+		<Ctrl name="Level" offset="962064" max="150" default="100"/>
+	</Effect>
+	<Effect name="Governor" offset="960332" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="960384" max="100" default="80"/>
+		<Ctrl name="Tone" offset="960424" max="100" default="50"/>
+		<Ctrl name="Level" offset="960464" max="150" default="100"/>
+	</Effect>
+	<Effect name="Dist+" offset="964132" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="964184" max="100" default="80"/>
+		<Ctrl name="Tone" offset="964224" max="100" default="50"/>
+		<Ctrl name="Level" offset="964264" max="150" default="100"/>
+	</Effect>
+	<Effect name="Dist 1" offset="963932" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="963984" max="100" default="60"/>
+		<Ctrl name="Tone" offset="964024" max="100" default="50"/>
+		<Ctrl name="Level" offset="964064" max="150" default="100"/>
+	</Effect>
+	<Effect name="Squeak" offset="964932" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="964984" max="100" default="40"/>
+		<Ctrl name="Tone" offset="965024" max="100" default="50"/>
+		<Ctrl name="Level" offset="965064" max="150" default="100"/>
+	</Effect>
+	<Effect name="FuzzSmile" offset="964332" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="964384" max="100" default="70"/>
+		<Ctrl name="Tone" offset="964424" max="100" default="50"/>
+		<Ctrl name="Level" offset="964464" max="150" default="100"/>
+	</Effect>
+	<Effect name="GreatMuff" offset="964532" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="964584" max="100" default="70"/>
+		<Ctrl name="Tone" offset="964624" max="100" default="50"/>
+		<Ctrl name="Level" offset="964664" max="150" default="100"/>
+	</Effect>
+	<Effect name="MetalWRLD" offset="964732" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="964784" max="100" default="60"/>
+		<Ctrl name="Tone" offset="964824" max="100" default="50"/>
+		<Ctrl name="Level" offset="964864" max="150" default="100"/>
+	</Effect>
+	<Effect name="HotBox" offset="960532" category="Stomp Modeling">
+		<Ctrl name="Gain" offset="960584" max="100" default="60"/>
+		<Ctrl name="Tone" offset="960624" max="100" default="50"/>
+		<Ctrl name="Level" offset="960664" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Clean" offset="962732" category="Original Amp">
+		<Ctrl name="Gain" offset="962784" max="100" default="60"/>
+		<Ctrl name="Tone" offset="962824" max="100" default="50"/>
+		<Ctrl name="Level" offset="962864" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z MP1" offset="963132" category="Original Amp">
+		<Ctrl name="Gain" offset="963184" max="100" default="60"/>
+		<Ctrl name="Tone" offset="963224" max="100" default="50"/>
+		<Ctrl name="Level" offset="963264" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Bottom" offset="962532" category="Original Amp">
+		<Ctrl name="Gain" offset="962584" max="100" default="60"/>
+		<Ctrl name="Tone" offset="962624" max="100" default="50"/>
+		<Ctrl name="Level" offset="962664" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Dream" offset="962932" category="Original Amp">
+		<Ctrl name="Gain" offset="962984" max="100" default="60"/>
+		<Ctrl name="Tone" offset="963024" max="100" default="50"/>
+		<Ctrl name="Level" offset="963064" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Scream" offset="963532" category="Original Amp">
+		<Ctrl name="Gain" offset="963584" max="100" default="60"/>
+		<Ctrl name="Tone" offset="963624" max="100" default="50"/>
+		<Ctrl name="Level" offset="963664" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Neos" offset="963332" category="Original Amp">
+		<Ctrl name="Gain" offset="963384" max="100" default="60"/>
+		<Ctrl name="Tone" offset="963424" max="100" default="50"/>
+		<Ctrl name="Level" offset="963464" max="150" default="100"/>
+	</Effect>
+	<Effect name="Z Wild" offset="963732" category="Original Stomp">
+		<Ctrl name="Gain" offset="963784" max="100" default="60"/>
+		<Ctrl name="Tone" offset="963824" max="100" default="50"/>
+		<Ctrl name="Level" offset="963864" max="150" default="100"/>
+	</Effect>
+	<Effect name="Lead" offset="960732" category="Original Stomp">
+		<Ctrl name="Gain" offset="960784" max="100" default="60"/>
+		<Ctrl name="Tone" offset="960824" max="100" default="50"/>
+		<Ctrl name="Level" offset="960864" max="150" default="100"/>
+	</Effect>
+	<Effect name="ExtremeDS" offset="959932" category="Original Stomp">
+		<Ctrl name="Gain" offset="959984" max="100" default="60"/>
+		<Ctrl name="Tone" offset="960024" max="100" default="50"/>
+		<Ctrl name="Level" offset="960064" max="150" default="100"/>
+	</Effect>
+	<Effect name="Aco.Sim" offset="959132" category="Original Stomp">
+		<Ctrl name="Top" offset="959184" max="100" default="80"/>
+		<Ctrl name="Body" offset="959224" max="100" default="50"/>
+		<Ctrl name="Level" offset="959264" max="150" default="100"/>
+	</Effect>
+	<Effect name="FD COMBO" offset="919892" category="Amp Modeling">
+		<Ctrl name="Gain" offset="919944" max="100" default="24"/>
+		<Ctrl name="Tube" offset="919984" max="100" default="30"/>
+		<Ctrl name="Level" offset="920024" max="150" default="86"/>
+		<Ctrl name="Trebl" offset="920064" max="100" default="48"/>
+		<Ctrl name="Middl" offset="920104" max="100" default="45"/>
+		<Ctrl name="Bass" offset="920144" max="100" default="44"/>
+		<Ctrl name="Prese" offset="920184" max="100" default="52"/>
+		<Ctrl name="CAB" offset="920224" max="22" default="0">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="DELUXE-R" offset="919092" category="Amp Modeling">
+		<Ctrl name="Gain" offset="919144" max="100" default="50"/>
+		<Ctrl name="Tube" offset="919184" max="100" default="30"/>
+		<Ctrl name="Level" offset="919224" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="919264" max="100" default="50"/>
+		<Ctrl name="Middl" offset="919304" max="100" default="50"/>
+		<Ctrl name="Bass" offset="919344" max="100" default="50"/>
+		<Ctrl name="Prese" offset="919384" max="100" default="50"/>
+		<Ctrl name="CAB" offset="919424" max="22" default="1">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="FD VIBRO" offset="920292" category="Amp Modeling">
+		<Ctrl name="Gain" offset="920344" max="100" default="56"/>
+		<Ctrl name="Tube" offset="920384" max="100" default="30"/>
+		<Ctrl name="Level" offset="920424" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="920464" max="100" default="54"/>
+		<Ctrl name="Middl" offset="920504" max="100" default="50"/>
+		<Ctrl name="Bass" offset="920544" max="100" default="47"/>
+		<Ctrl name="Prese" offset="920584" max="100" default="52"/>
+		<Ctrl name="CAB" offset="920624" max="22" default="2">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="US BLUES" offset="925092" category="Amp Modeling">
+		<Ctrl name="Gain" offset="925144" max="100" default="59"/>
+		<Ctrl name="Tube" offset="925184" max="100" default="30"/>
+		<Ctrl name="Level" offset="925224" max="150" default="106"/>
+		<Ctrl name="Trebl" offset="925264" max="100" default="46"/>
+		<Ctrl name="Middl" offset="925304" max="100" default="50"/>
+		<Ctrl name="Bass" offset="925344" max="100" default="48"/>
+		<Ctrl name="Prese" offset="925384" max="100" default="58"/>
+		<Ctrl name="CAB" offset="925424" max="22" default="3">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="VX COMBO" offset="925492" category="Amp Modeling">
+		<Ctrl name="Gain" offset="925544" max="100" default="31"/>
+		<Ctrl name="Tube" offset="925584" max="100" default="30"/>
+		<Ctrl name="Level" offset="925624" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="925664" max="100" default="44"/>
+		<Ctrl name="Middl" offset="925704" max="100" default="50"/>
+		<Ctrl name="Bass" offset="925744" max="100" default="49"/>
+		<Ctrl name="Prese" offset="925784" max="100" default="53"/>
+		<Ctrl name="CAB" offset="925824" max="22" default="4">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="VX JMI" offset="925892" category="Amp Modeling">
+		<Ctrl name="Gain" offset="925944" max="100" default="50"/>
+		<Ctrl name="Tube" offset="925984" max="100" default="30"/>
+		<Ctrl name="Level" offset="926024" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="926064" max="100" default="50"/>
+		<Ctrl name="Middl" offset="926104" max="100" default="50"/>
+		<Ctrl name="Bass" offset="926144" max="100" default="50"/>
+		<Ctrl name="Prese" offset="926184" max="100" default="50"/>
+		<Ctrl name="CAB" offset="926224" max="22" default="5">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="BG CRUNCH" offset="917092" category="Amp Modeling">
+		<Ctrl name="Gain" offset="917144" max="100" default="57"/>
+		<Ctrl name="Tube" offset="917184" max="100" default="30"/>
+		<Ctrl name="Level" offset="917224" max="150" default="98"/>
+		<Ctrl name="Trebl" offset="917264" max="100" default="50"/>
+		<Ctrl name="Middl" offset="917304" max="100" default="50"/>
+		<Ctrl name="Bass" offset="917344" max="100" default="50"/>
+		<Ctrl name="Prese" offset="917384" max="100" default="60"/>
+		<Ctrl name="CAB" offset="917424" max="22" default="6">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="MATCH 30" offset="921492" category="Amp Modeling">
+		<Ctrl name="Gain" offset="921544" max="100" default="28"/>
+		<Ctrl name="Tube" offset="921584" max="100" default="30"/>
+		<Ctrl name="Level" offset="921624" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="921664" max="100" default="46"/>
+		<Ctrl name="Middl" offset="921704" max="100" default="46"/>
+		<Ctrl name="Bass" offset="921744" max="100" default="45"/>
+		<Ctrl name="Prese" offset="921784" max="100" default="53"/>
+		<Ctrl name="CAB" offset="921824" max="22" default="7">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="CAR DRIVE" offset="918692" category="Amp Modeling">
+		<Ctrl name="Gain" offset="918744" max="100" default="50"/>
+		<Ctrl name="Tube" offset="918784" max="100" default="30"/>
+		<Ctrl name="Level" offset="918824" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="918864" max="100" default="50"/>
+		<Ctrl name="Middl" offset="918904" max="100" default="50"/>
+		<Ctrl name="Bass" offset="918944" max="100" default="50"/>
+		<Ctrl name="Prese" offset="918984" max="100" default="50"/>
+		<Ctrl name="CAB" offset="919024" max="22" default="8">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="TW ROCK" offset="924692" category="Amp Modeling">
+		<Ctrl name="Gain" offset="924744" max="100" default="53"/>
+		<Ctrl name="Tube" offset="924784" max="100" default="30"/>
+		<Ctrl name="Level" offset="924824" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="924864" max="100" default="50"/>
+		<Ctrl name="Middl" offset="924904" max="100" default="50"/>
+		<Ctrl name="Bass" offset="924944" max="100" default="51"/>
+		<Ctrl name="Prese" offset="924984" max="100" default="50"/>
+		<Ctrl name="CAB" offset="925024" max="22" default="9">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="TONE CITY" offset="923492" category="Amp Modeling">
+		<Ctrl name="Gain" offset="923544" max="100" default="50"/>
+		<Ctrl name="Tube" offset="923584" max="100" default="30"/>
+		<Ctrl name="Level" offset="923624" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="923664" max="100" default="50"/>
+		<Ctrl name="Middl" offset="923704" max="100" default="50"/>
+		<Ctrl name="Bass" offset="923744" max="100" default="50"/>
+		<Ctrl name="Prese" offset="923784" max="100" default="50"/>
+		<Ctrl name="CAB" offset="923824" max="22" default="10">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="HW STACK" offset="920692" category="Amp Modeling">
+		<Ctrl name="Gain" offset="920744" max="100" default="51"/>
+		<Ctrl name="Tube" offset="920784" max="100" default="30"/>
+		<Ctrl name="Level" offset="920824" max="150" default="110"/>
+		<Ctrl name="Trebl" offset="920864" max="100" default="46"/>
+		<Ctrl name="Middl" offset="920904" max="100" default="50"/>
+		<Ctrl name="Bass" offset="920944" max="100" default="51"/>
+		<Ctrl name="Prese" offset="920984" max="100" default="52"/>
+		<Ctrl name="CAB" offset="921024" max="22" default="11">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="TANGERINE" offset="924292" category="Amp Modeling">
+		<Ctrl name="Gain" offset="924344" max="100" default="69"/>
+		<Ctrl name="Tube" offset="924384" max="100" default="30"/>
+		<Ctrl name="Level" offset="924424" max="150" default="95"/>
+		<Ctrl name="Trebl" offset="924464" max="100" default="52"/>
+		<Ctrl name="Middl" offset="924504" max="100" default="50"/>
+		<Ctrl name="Bass" offset="924544" max="100" default="45"/>
+		<Ctrl name="Prese" offset="924584" max="100" default="50"/>
+		<Ctrl name="CAB" offset="924624" max="22" default="12">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="B-BREAKER" offset="916692" category="Amp Modeling">
+		<Ctrl name="Gain" offset="916744" max="100" default="50"/>
+		<Ctrl name="Tube" offset="916784" max="100" default="30"/>
+		<Ctrl name="Level" offset="916824" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="916864" max="100" default="50"/>
+		<Ctrl name="Middl" offset="916904" max="100" default="50"/>
+		<Ctrl name="Bass" offset="916944" max="100" default="50"/>
+		<Ctrl name="Prese" offset="916984" max="100" default="50"/>
+		<Ctrl name="CAB" offset="917024" max="22" default="13">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="MS CRUNCH" offset="922292" category="Amp Modeling">
+		<Ctrl name="Gain" offset="922344" max="100" default="52"/>
+		<Ctrl name="Tube" offset="922384" max="100" default="30"/>
+		<Ctrl name="Level" offset="922424" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="922464" max="100" default="48"/>
+		<Ctrl name="Middl" offset="922504" max="100" default="50"/>
+		<Ctrl name="Bass" offset="922544" max="100" default="49"/>
+		<Ctrl name="Prese" offset="922584" max="100" default="58"/>
+		<Ctrl name="CAB" offset="922624" max="22" default="14">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="MS 1959" offset="921892" category="Amp Modeling">
+		<Ctrl name="Gain" offset="921944" max="100" default="50"/>
+		<Ctrl name="Tube" offset="921984" max="100" default="30"/>
+		<Ctrl name="Level" offset="922024" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="922064" max="100" default="50"/>
+		<Ctrl name="Middl" offset="922104" max="100" default="50"/>
+		<Ctrl name="Bass" offset="922144" max="100" default="50"/>
+		<Ctrl name="Prese" offset="922184" max="100" default="50"/>
+		<Ctrl name="CAB" offset="922224" max="22" default="15">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="MS DRIVE" offset="922692" category="Amp Modeling">
+		<Ctrl name="Gain" offset="922744" max="100" default="73"/>
+		<Ctrl name="Tube" offset="922784" max="100" default="30"/>
+		<Ctrl name="Level" offset="922824" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="922864" max="100" default="50"/>
+		<Ctrl name="Middl" offset="922904" max="100" default="50"/>
+		<Ctrl name="Bass" offset="922944" max="100" default="52"/>
+		<Ctrl name="Prese" offset="922984" max="100" default="50"/>
+		<Ctrl name="CAB" offset="923024" max="22" default="16">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="BGN DRIVE" offset="917892" category="Amp Modeling">
+		<Ctrl name="Gain" offset="917944" max="100" default="50"/>
+		<Ctrl name="Tube" offset="917984" max="100" default="30"/>
+		<Ctrl name="Level" offset="918024" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="918064" max="100" default="50"/>
+		<Ctrl name="Middl" offset="918104" max="100" default="50"/>
+		<Ctrl name="Bass" offset="918144" max="100" default="50"/>
+		<Ctrl name="Prese" offset="918184" max="100" default="50"/>
+		<Ctrl name="CAB" offset="918224" max="22" default="17">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="BG DRIVE" offset="917492" category="Amp Modeling">
+		<Ctrl name="Gain" offset="917544" max="100" default="41"/>
+		<Ctrl name="Tube" offset="917584" max="100" default="30"/>
+		<Ctrl name="Level" offset="917624" max="150" default="98"/>
+		<Ctrl name="Trebl" offset="917664" max="100" default="50"/>
+		<Ctrl name="Middl" offset="917704" max="100" default="50"/>
+		<Ctrl name="Bass" offset="917744" max="100" default="44"/>
+		<Ctrl name="Prese" offset="917784" max="100" default="51"/>
+		<Ctrl name="CAB" offset="917824" max="22" default="18">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="DZ DRIVE" offset="919492" category="Amp Modeling">
+		<Ctrl name="Gain" offset="919544" max="100" default="46"/>
+		<Ctrl name="Tube" offset="919584" max="100" default="30"/>
+		<Ctrl name="Level" offset="919624" max="150" default="96"/>
+		<Ctrl name="Trebl" offset="919664" max="100" default="50"/>
+		<Ctrl name="Middl" offset="919704" max="100" default="52"/>
+		<Ctrl name="Bass" offset="919744" max="100" default="48"/>
+		<Ctrl name="Prese" offset="919784" max="100" default="52"/>
+		<Ctrl name="CAB" offset="919824" max="22" default="19">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="ALIEN" offset="916292" category="Amp Modeling">
+		<Ctrl name="Gain" offset="916344" max="100" default="50"/>
+		<Ctrl name="Tube" offset="916384" max="100" default="30"/>
+		<Ctrl name="Level" offset="916424" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="916464" max="100" default="50"/>
+		<Ctrl name="Middl" offset="916504" max="100" default="50"/>
+		<Ctrl name="Bass" offset="916544" max="100" default="50"/>
+		<Ctrl name="Prese" offset="916584" max="100" default="50"/>
+		<Ctrl name="CAB" offset="916624" max="22" default="20">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="REVO-1" offset="923092" category="Amp Modeling">
+		<Ctrl name="Gain" offset="923144" max="100" default="50"/>
+		<Ctrl name="Tube" offset="923184" max="100" default="30"/>
+		<Ctrl name="Level" offset="923224" max="150" default="100"/>
+		<Ctrl name="Trebl" offset="923264" max="100" default="50"/>
+		<Ctrl name="Middl" offset="923304" max="100" default="50"/>
+		<Ctrl name="Bass" offset="923344" max="100" default="50"/>
+		<Ctrl name="Prese" offset="923384" max="100" default="50"/>
+		<Ctrl name="CAB" offset="923424" max="22" default="21">
+			<PrmTable>
+				<String>FD COMBO 2x12</String>
+				<String>DELUXE-R 1x12</String>
+				<String>FD VIBRO 2x10</String>
+				<String>US BLUES 4x10</String>
+				<String>VX COMBO 2x12</String>
+				<String>VX JMI 2x12</String>
+				<String>BG CRUNCH 1x12</String>
+				<String>MATCH 30 2x12</String>
+				<String>CAR DRIVE 1x12</String>
+				<String>TW ROCK 1x12</String>
+				<String>TONE CITY 4x12</String>
+				<String>HW STACK 4x12</String>
+				<String>TANGERINE 4x12</String>
+				<String>B-BREAKER 2x12</String>
+				<String>MS CRUNCH 4x12</String>
+				<String>MS 1959 4x12</String>
+				<String>MS DRIVE 4x12</String>
+				<String>BGN DRIVE 4x12</String>
+				<String>BG DRIVE 4x12</String>
+				<String>DZ DRIVE 4x12</String>
+				<String>ALIEN 4x12</String>
+				<String>REVO-1 4x12</String>
+				<String>OFF</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="Tremolo" offset="954700" category="Modulation">
+		<Ctrl name="Depth" offset="954752" max="100" default="80"/>
+		<Ctrl name="Rate" offset="954792" max="78" default="33"/>
+		<Ctrl name="Level" offset="954832" max="150" default="130"/>
+		<Ctrl name="Wave" offset="954872" max="29" default="21">
+			<PrmTable>
+				<String>UP 0</String>
+				<String>UP 1</String>
+				<String>UP 2</String>
+				<String>UP 3</String>
+				<String>UP 4</String>
+				<String>UP 5</String>
+				<String>UP 6</String>
+				<String>UP 7</String>
+				<String>UP 8</String>
+				<String>UP 9</String>
+				<String>DWN 0</String>
+				<String>DWN 1</String>
+				<String>DWN 2</String>
+				<String>DWN 3</String>
+				<String>DWN 4</String>
+				<String>DWN 5</String>
+				<String>DWN 6</String>
+				<String>DWN 7</String>
+				<String>DWN 8</String>
+				<String>DWN 9</String>
+				<String>TRI 0</String>
+				<String>TRI 1</String>
+				<String>TRI 2</String>
+				<String>TRI 3</String>
+				<String>TRI 4</String>
+				<String>TRI 5</String>
+				<String>TRI 6</String>
+				<String>TRI 7</String>
+				<String>TRI 8</String>
+				<String>TRI 9</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="Slicer" offset="946676" category="Modulation">
+		<Ctrl name="PTTRN" offset="946728" max="19" default="0"/>
+		<Ctrl name="Speed" offset="946768" max="77" default="24"/>
+		<Ctrl name="Bal" offset="946808" max="100" default="100"/>
+		<Ctrl name="THRSH" offset="946848" max="50" default="20"/>
+		<Ctrl name="Level" offset="946888" max="150" default="130"/>
+	</Effect>
+	<Effect name="Phaser" offset="961532" category="Modulation">
+		<Ctrl name="Rate" offset="961584" max="77" default="11"/>
+		<Ctrl name="Color" offset="961624" max="3" default="3">
+			<PrmTable>
+				<String>4 STG</String>
+				<String>8 STG</String>
+				<String>inv 4</String>
+				<String>inv 8</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="961664" max="150" default="100"/>
+	</Effect>
+	<Effect name="DuoPhase" offset="918292" category="Modulation">
+		<Ctrl name="RateA" offset="918344" max="77" default="46"/>
+		<Ctrl name="RateB" offset="918384" max="51" default="5"/>
+		<Ctrl name="Level" offset="918424" max="150" default="100"/>
+		<Ctrl name="ResoA" offset="918464" max="10" default="0"/>
+		<Ctrl name="ResoB" offset="918504" max="10" default="6"/>
+		<Ctrl name="Link" offset="918544" max="2" default="0">
+			<PrmTable>
+				<String>Seri</String>
+				<String>Para</String>
+				<String>STR</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="DPT_A" offset="918584" max="99" default="36"/>
+		<Ctrl name="DPT_B" offset="918624" max="99" default="62"/>
+	</Effect>
+	<Effect name="WarpPhase" offset="953980" category="Modulation">
+		<Ctrl name="Speed" offset="954032" max="77" default="24"/>
+		<Ctrl name="Reso" offset="954072" max="10" default="7"/>
+		<Ctrl name="Level" offset="954112" max="150" default="100"/>
+		<Ctrl name="DRCTN" offset="954152" max="1" default="0">
+			<PrmTable>
+				<String>Go</String>
+				<String>Back</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="Chorus" offset="941356" category="Modulation">
+		<Ctrl name="Depth" offset="941408" max="100" default="40"/>
+		<Ctrl name="Rate" offset="941448" max="49" default="24"/>
+		<Ctrl name="Mix" offset="941488" max="100" default="50"/>
+		<Ctrl name="Tone" offset="941528" max="10" default="7"/>
+		<Ctrl name="Level" offset="941568" max="150" default="100"/>
+	</Effect>
+	<Effect name="Detune" offset="942196" category="Modulation">
+		<Ctrl name="Cent" offset="942248" max="50" default="35">
+			<PrmTable>
+				<String>-25</String>
+				<String>-24</String>
+				<String>-23</String>
+				<String>-22</String>
+				<String>-21</String>
+				<String>-20</String>
+				<String>-19</String>
+				<String>-18</String>
+				<String>-17</String>
+				<String>-16</String>
+				<String>-15</String>
+				<String>-14</String>
+				<String>-13</String>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+				<String>13</String>
+				<String>14</String>
+				<String>15</String>
+				<String>16</String>
+				<String>17</String>
+				<String>18</String>
+				<String>19</String>
+				<String>20</String>
+				<String>21</String>
+				<String>22</String>
+				<String>23</String>
+				<String>24</String>
+				<String>25</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="PreD" offset="942288" max="50" default="0"/>
+		<Ctrl name="Mix" offset="942328" max="100" default="52"/>
+		<Ctrl name="Tone" offset="942368" max="10" default="8"/>
+		<Ctrl name="Level" offset="942408" max="150" default="100"/>
+	</Effect>
+	<Effect name="VintageCE" offset="954940" category="Modulation">
+		<Ctrl name="Comp" offset="954992" max="9" default="2"/>
+		<Ctrl name="Rate" offset="955032" max="49" default="24"/>
+		<Ctrl name="Mix" offset="955072" max="100" default="50"/>
+		<Ctrl name="Level" offset="955112" max="150" default="100"/>
+	</Effect>
+	<Effect name="StereoCho" offset="947516" category="Modulation">
+		<Ctrl name="Depth" offset="947568" max="100" default="80"/>
+		<Ctrl name="Rate" offset="947608" max="49" default="29"/>
+		<Ctrl name="Mix" offset="947648" max="100" default="60"/>
+		<Ctrl name="Tone" offset="947688" max="10" default="7"/>
+		<Ctrl name="Level" offset="947728" max="150" default="100"/>
+	</Effect>
+	<Effect name="Ensemble" offset="943596" category="Modulation">
+		<Ctrl name="Depth" offset="943648" max="100" default="40"/>
+		<Ctrl name="Rate" offset="943688" max="49" default="29"/>
+		<Ctrl name="Mix" offset="943728" max="100" default="60"/>
+		<Ctrl name="Tone" offset="943768" max="10" default="8"/>
+		<Ctrl name="Level" offset="943808" max="150" default="100"/>
+	</Effect>
+	<Effect name="VinFLNGR" offset="935220" category="Modulation">
+		<Ctrl name="Depth" offset="935272" max="100" default="47"/>
+		<Ctrl name="Rate" offset="935312" max="78" default="7"/>
+		<Ctrl name="Reso" offset="935352" max="20" default="18">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="PreD" offset="935392" max="50" default="4"/>
+		<Ctrl name="Mix" offset="935432" max="100" default="65"/>
+		<Ctrl name="Level" offset="935472" max="150" default="100"/>
+	</Effect>
+	<Effect name="Flanger" offset="933940" category="Modulation">
+		<Ctrl name="Depth" offset="933992" max="100" default="47"/>
+		<Ctrl name="Rate" offset="934032" max="78" default="7"/>
+		<Ctrl name="Reso" offset="934072" max="20" default="18">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="PreD" offset="934112" max="50" default="4"/>
+		<Ctrl name="Mix" offset="934152" max="100" default="65"/>
+		<Ctrl name="Level" offset="934192" max="150" default="100"/>
+	</Effect>
+	<Effect name="DynaFLNGR" offset="943036" category="Modulation">
+		<Ctrl name="Depth" offset="943088" max="100" default="30"/>
+		<Ctrl name="Rate" offset="943128" max="78" default="38"/>
+		<Ctrl name="Sense" offset="943168" max="19" default="0">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Reso" offset="943208" max="20" default="15">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="943248" max="150" default="100"/>
+	</Effect>
+	<Effect name="Vibrato" offset="948636" category="Modulation">
+		<Ctrl name="Depth" offset="948688" max="100" default="40"/>
+		<Ctrl name="Rate" offset="948728" max="78" default="30"/>
+		<Ctrl name="Bal" offset="948768" max="100" default="72"/>
+		<Ctrl name="Tone" offset="948808" max="10" default="7"/>
+		<Ctrl name="Level" offset="948848" max="150" default="120"/>
+	</Effect>
+	<Effect name="Octave" offset="936500" category="Modulation">
+		<Ctrl name="Oct1" offset="936552" max="100" default="80"/>
+		<Ctrl name="Oct2" offset="936592" max="100" default="15"/>
+		<Ctrl name="Dry" offset="936632" max="100" default="100"/>
+		<Ctrl name="Chara" offset="936672" max="100" default="100"/>
+		<Ctrl name="Tone" offset="936712" max="10" default="8"/>
+		<Ctrl name="Level" offset="936752" max="150" default="100"/>
+	</Effect>
+	<Effect name="PitchSHFT" offset="945836" category="Modulation">
+		<Ctrl name="Shift" offset="945888" max="25" default="19">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+				<String>24</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Tone" offset="945928" max="10" default="7"/>
+		<Ctrl name="Bal" offset="945968" max="100" default="40"/>
+		<Ctrl name="Fine" offset="946008" max="50" default="25">
+			<PrmTable>
+				<String>-25</String>
+				<String>-24</String>
+				<String>-23</String>
+				<String>-22</String>
+				<String>-21</String>
+				<String>-20</String>
+				<String>-19</String>
+				<String>-18</String>
+				<String>-17</String>
+				<String>-16</String>
+				<String>-15</String>
+				<String>-14</String>
+				<String>-13</String>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+				<String>13</String>
+				<String>14</String>
+				<String>15</String>
+				<String>16</String>
+				<String>17</String>
+				<String>18</String>
+				<String>19</String>
+				<String>20</String>
+				<String>21</String>
+				<String>22</String>
+				<String>23</String>
+				<String>24</String>
+				<String>25</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="946048" max="150" default="100"/>
+	</Effect>
+	<Effect name="MonoPitch" offset="944996" category="Modulation">
+		<Ctrl name="Shift" offset="945048" max="25" default="0">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+				<String>24</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Tone" offset="945088" max="10" default="6"/>
+		<Ctrl name="Bal" offset="945128" max="100" default="50"/>
+		<Ctrl name="Fine" offset="945168" max="50" default="25">
+			<PrmTable>
+				<String>-25</String>
+				<String>-24</String>
+				<String>-23</String>
+				<String>-22</String>
+				<String>-21</String>
+				<String>-20</String>
+				<String>-19</String>
+				<String>-18</String>
+				<String>-17</String>
+				<String>-16</String>
+				<String>-15</String>
+				<String>-14</String>
+				<String>-13</String>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+				<String>13</String>
+				<String>14</String>
+				<String>15</String>
+				<String>16</String>
+				<String>17</String>
+				<String>18</String>
+				<String>19</String>
+				<String>20</String>
+				<String>21</String>
+				<String>22</String>
+				<String>23</String>
+				<String>24</String>
+				<String>25</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="945208" max="150" default="100"/>
+	</Effect>
+	<Effect name="HPS" offset="943876" category="Modulation">
+		<Ctrl name="Scale" offset="943928" max="9" default="6">
+			<PrmTable>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-m</String>
+				<String>m</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Key" offset="943968" max="11" default="0">
+			<PrmTable>
+				<String>C</String>
+				<String>C#</String>
+				<String>D</String>
+				<String>D#</String>
+				<String>E</String>
+				<String>F</String>
+				<String>F#</String>
+				<String>G</String>
+				<String>G#</String>
+				<String>A</String>
+				<String>A#</String>
+				<String>B</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Mix" offset="944008" max="100" default="70"/>
+		<Ctrl name="Tone" offset="944048" max="10" default="6"/>
+		<Ctrl name="Level" offset="944088" max="150" default="100"/>
+	</Effect>
+	<Effect name="BendCho" offset="934580" category="Modulation">
+		<Ctrl name="Depth" offset="934632" max="100" default="40"/>
+		<Ctrl name="Time" offset="934672" max="50" default="50"/>
+		<Ctrl name="Bal" offset="934712" max="100" default="100"/>
+		<Ctrl name="Mode" offset="934752" max="1" default="0">
+			<PrmTable>
+				<String>Up</String>
+				<String>Down</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Tone" offset="934792" max="10" default="8"/>
+		<Ctrl name="Level" offset="934832" max="150" default="100"/>
+	</Effect>
+	<Effect name="RingMod" offset="954460" category="Modulation">
+		<Ctrl name="Freq" offset="954512" max="49" default="27"/>
+		<Ctrl name="Tone" offset="954552" max="10" default="10"/>
+		<Ctrl name="Bal" offset="954592" max="100" default="50"/>
+		<Ctrl name="Level" offset="954632" max="150" default="120"/>
+	</Effect>
+	<Effect name="BitCrush" offset="941076" category="Modulation">
+		<Ctrl name="Bit" offset="941128" max="12" default="5"/>
+		<Ctrl name="SMPL" offset="941168" max="50" default="2"/>
+		<Ctrl name="Bal" offset="941208" max="100" default="90"/>
+		<Ctrl name="Tone" offset="941248" max="10" default="8"/>
+		<Ctrl name="Level" offset="941288" max="150" default="100"/>
+	</Effect>
+	<Effect name="Bomber" offset="928996" category="SFX">
+		<Ctrl name="PTTRN" offset="929048" max="3" default="3">
+			<PrmTable>
+				<String>HndGn</String>
+				<String>Arm</String>
+				<String>Bomb</String>
+				<String>Thndr</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Decay" offset="929088" max="99" default="49"/>
+		<Ctrl name="Bal" offset="929128" max="100" default="15"/>
+		<Ctrl name="THRSH" offset="929168" max="50" default="40"/>
+		<Ctrl name="Power" offset="929208" max="30" default="30"/>
+		<Ctrl name="Tone" offset="929248" max="10" default="4"/>
+		<Ctrl name="Level" offset="929288" max="150" default="100"/>
+	</Effect>
+	<Effect name="MonoSynth" offset="936180" category="SFX">
+		<Ctrl name="Synth" offset="936232" max="100" default="40"/>
+		<Ctrl name="Dry" offset="936272" max="100" default="100"/>
+		<Ctrl name="Level" offset="936312" max="150" default="100"/>
+		<Ctrl name="Wave" offset="936352" max="3" default="2">
+			<PrmTable>
+				<String>Sine</String>
+				<String>Tri</String>
+				<String>SawUp</String>
+				<String>SawDn</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Tone" offset="936392" max="10" default="8"/>
+		<Ctrl name="Speed" offset="936432" max="100" default="0"/>
+	</Effect>
+	<Effect name="Z-Organ" offset="938100" category="SFX">
+		<Ctrl name="Upper" offset="938152" max="100" default="70"/>
+		<Ctrl name="Lower" offset="938192" max="100" default="80"/>
+		<Ctrl name="Dry" offset="938232" max="100" default="80"/>
+		<Ctrl name="HPF" offset="938272" max="10" default="3"/>
+		<Ctrl name="LPF" offset="938312" max="10" default="8"/>
+		<Ctrl name="Level" offset="938352" max="150" default="100"/>
+	</Effect>
+	<Effect name="Delay" offset="935860" category="Delay">
+		<Ctrl name="Time" offset="935912" max="2516" default="559"/>
+		<Ctrl name="F.B" offset="935952" max="100" default="30"/>
+		<Ctrl name="Mix" offset="935992" max="100" default="70"/>
+		<Ctrl name="HiDMP" offset="936032" max="10" default="10"/>
+		<Ctrl name="P-P" offset="936072" max="1" default="0">
+			<PrmTable>
+				<String>MONO</String>
+				<String>P-P</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="936112" max="150" default="100"/>
+	</Effect>
+	<Effect name="TapeEcho" offset="947796" category="Delay">
+		<Ctrl name="Time" offset="947848" max="2014" default="559"/>
+		<Ctrl name="F.B" offset="947888" max="100" default="64"/>
+		<Ctrl name="Mix" offset="947928" max="100" default="56"/>
+		<Ctrl name="HiDMP" offset="947968" max="10" default="5"/>
+		<Ctrl name="Level" offset="948008" max="150" default="100"/>
+	</Effect>
+	<Effect name="ModDelay" offset="944716" category="Delay">
+		<Ctrl name="Time" offset="944768" max="2014" default="499"/>
+		<Ctrl name="F.B" offset="944808" max="100" default="50"/>
+		<Ctrl name="Mix" offset="944848" max="100" default="62"/>
+		<Ctrl name="Rate" offset="944888" max="49" default="20"/>
+		<Ctrl name="Level" offset="944928" max="150" default="100"/>
+	</Effect>
+	<Effect name="AnalogDly" offset="934260" category="Delay">
+		<Ctrl name="Time" offset="934312" max="2516" default="359"/>
+		<Ctrl name="F.B" offset="934352" max="100" default="28"/>
+		<Ctrl name="Mix" offset="934392" max="100" default="40"/>
+		<Ctrl name="HiDMP" offset="934432" max="10" default="8"/>
+		<Ctrl name="P-P" offset="934472" max="1" default="0">
+			<PrmTable>
+				<String>MONO</String>
+				<String>P-P</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="934512" max="150" default="100"/>
+	</Effect>
+	<Effect name="ReverseDL" offset="946116" category="Delay">
+		<Ctrl name="Time" offset="946168" max="1251" default="990"/>
+		<Ctrl name="F.B" offset="946208" max="100" default="20"/>
+		<Ctrl name="Bal" offset="946248" max="100" default="50"/>
+		<Ctrl name="HiDMP" offset="946288" max="10" default="8"/>
+		<Ctrl name="Level" offset="946328" max="150" default="100"/>
+	</Effect>
+	<Effect name="MultiTapD" offset="944436" category="Delay">
+		<Ctrl name="Time" offset="944488" max="2516" default="2499"/>
+		<Ctrl name="PTTRN" offset="944528" max="7" default="1"/>
+		<Ctrl name="Mix" offset="944568" max="100" default="20"/>
+		<Ctrl name="Tone" offset="944608" max="10" default="10"/>
+		<Ctrl name="Level" offset="944648" max="150" default="100"/>
+	</Effect>
+	<Effect name="DynaDelay" offset="942756" category="Delay">
+		<Ctrl name="Time" offset="942808" max="2014" default="359"/>
+		<Ctrl name="Sense" offset="942848" max="19" default="5">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Mix" offset="942888" max="100" default="80"/>
+		<Ctrl name="F.B" offset="942928" max="100" default="30"/>
+		<Ctrl name="Level" offset="942968" max="150" default="100"/>
+	</Effect>
+	<Effect name="FilterDly" offset="929356" category="Delay">
+		<Ctrl name="Time" offset="929408" max="2014" default="499"/>
+		<Ctrl name="F.B" offset="929448" max="100" default="50"/>
+		<Ctrl name="Mix" offset="929488" max="100" default="90"/>
+		<Ctrl name="Rate" offset="929528" max="49" default="6"/>
+		<Ctrl name="Depth" offset="929568" max="100" default="100"/>
+		<Ctrl name="Reso" offset="929608" max="10" default="8"/>
+		<Ctrl name="Level" offset="929648" max="150" default="100"/>
+	</Effect>
+	<Effect name="PitchDly" offset="937140" category="Delay">
+		<Ctrl name="Time" offset="937192" max="1999" default="89"/>
+		<Ctrl name="Pitch" offset="937232" max="30" default="21">
+			<PrmTable>
+				<String>-12</String>
+				<String>-11</String>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>-0.15</String>
+				<String>-0.10</String>
+				<String>-0.05</String>
+				<String>0</String>
+				<String>0.05</String>
+				<String>0.10</String>
+				<String>0.15</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+				<String>11</String>
+				<String>12</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Mix" offset="937272" max="100" default="80"/>
+		<Ctrl name="F.B" offset="937312" max="100" default="80"/>
+		<Ctrl name="Tone" offset="937352" max="10" default="8"/>
+		<Ctrl name="Level" offset="937392" max="150" default="100"/>
+	</Effect>
+	<Effect name="StereoDly" offset="923892" category="Delay">
+		<Ctrl name="TimeL" offset="923944" max="1010" default="164"/>
+		<Ctrl name="TimeR" offset="923984" max="1010" default="504"/>
+		<Ctrl name="Mix" offset="924024" max="100" default="100"/>
+		<Ctrl name="LchFB" offset="924064" max="100" default="55"/>
+		<Ctrl name="RchFB" offset="924104" max="100" default="37"/>
+		<Ctrl name="Level" offset="924144" max="150" default="100"/>
+		<Ctrl name="LchLv" offset="924184" max="100" default="100"/>
+		<Ctrl name="RchLv" offset="924224" max="100" default="100"/>
+	</Effect>
+	<Effect name="PhaseDly" offset="936820" category="Delay">
+		<Ctrl name="Time" offset="936872" max="2014" default="499"/>
+		<Ctrl name="F.B" offset="936912" max="100" default="28"/>
+		<Ctrl name="Mix" offset="936952" max="100" default="57"/>
+		<Ctrl name="Rate" offset="936992" max="49" default="49"/>
+		<Ctrl name="Color" offset="937032" max="3" default="3">
+			<PrmTable>
+				<String>4 STG</String>
+				<String>8 STG</String>
+				<String>inv 4</String>
+				<String>inv 8</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="937072" max="150" default="100"/>
+	</Effect>
+	<Effect name="TrgHldDly" offset="948356" category="Delay">
+		<Ctrl name="Time" offset="948408" max="990" default="40"/>
+		<Ctrl name="Duty" offset="948448" max="75" default="75"/>
+		<Ctrl name="Mix" offset="948488" max="100" default="100"/>
+		<Ctrl name="THRSH" offset="948528" max="30" default="20"/>
+		<Ctrl name="Level" offset="948568" max="150" default="100"/>
+	</Effect>
+	<Effect name="HD Reverb" offset="935540" category="Reverb">
+		<Ctrl name="Decay" offset="935592" max="100" default="10"/>
+		<Ctrl name="Tone" offset="935632" max="10" default="7"/>
+		<Ctrl name="Mix" offset="935672" max="100" default="46"/>
+		<Ctrl name="PreD" offset="935712" max="199" default="53"/>
+		<Ctrl name="HPF" offset="935752" max="10" default="7"/>
+		<Ctrl name="Level" offset="935792" max="150" default="100"/>
+	</Effect>
+	<Effect name="Hall" offset="944156" category="Reverb">
+		<Ctrl name="Decay" offset="944208" max="29" default="9"/>
+		<Ctrl name="Tone" offset="944248" max="10" default="5"/>
+		<Ctrl name="Mix" offset="944288" max="100" default="46"/>
+		<Ctrl name="PreD" offset="944328" max="99" default="48"/>
+		<Ctrl name="Level" offset="944368" max="150" default="100"/>
+	</Effect>
+	<Effect name="Room" offset="946396" category="Reverb">
+		<Ctrl name="Decay" offset="946448" max="29" default="9"/>
+		<Ctrl name="Tone" offset="946488" max="10" default="8"/>
+		<Ctrl name="Mix" offset="946528" max="100" default="60"/>
+		<Ctrl name="PreD" offset="946568" max="99" default="4"/>
+		<Ctrl name="Level" offset="946608" max="150" default="100"/>
+	</Effect>
+	<Effect name="TiledRoom" offset="948076" category="Reverb">
+		<Ctrl name="Decay" offset="948128" max="29" default="19"/>
+		<Ctrl name="Tone" offset="948168" max="10" default="4"/>
+		<Ctrl name="Mix" offset="948208" max="100" default="46"/>
+		<Ctrl name="PreD" offset="948248" max="99" default="9"/>
+		<Ctrl name="Level" offset="948288" max="150" default="100"/>
+	</Effect>
+	<Effect name="Spring" offset="946956" category="Reverb">
+		<Ctrl name="Decay" offset="947008" max="29" default="19"/>
+		<Ctrl name="Tone" offset="947048" max="10" default="8"/>
+		<Ctrl name="Mix" offset="947088" max="100" default="50"/>
+		<Ctrl name="PreD" offset="947128" max="99" default="0"/>
+		<Ctrl name="Level" offset="947168" max="150" default="100"/>
+	</Effect>
+	<Effect name="Arena" offset="940796" category="Reverb">
+		<Ctrl name="Decay" offset="940848" max="29" default="14"/>
+		<Ctrl name="Tone" offset="940888" max="10" default="7"/>
+		<Ctrl name="Mix" offset="940928" max="100" default="56"/>
+		<Ctrl name="PreD" offset="940968" max="99" default="89"/>
+		<Ctrl name="Level" offset="941008" max="150" default="100"/>
+	</Effect>
+	<Effect name="EarlyRef" offset="943316" category="Reverb">
+		<Ctrl name="Decay" offset="943368" max="29" default="14"/>
+		<Ctrl name="Shape" offset="943408" max="20" default="20">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>0</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Mix" offset="943448" max="100" default="50"/>
+		<Ctrl name="Tone" offset="943488" max="10" default="6"/>
+		<Ctrl name="Level" offset="943528" max="150" default="100"/>
+	</Effect>
+	<Effect name="Air" offset="940516" category="Reverb">
+		<Ctrl name="Size" offset="940568" max="99" default="19"/>
+		<Ctrl name="Tone" offset="940608" max="10" default="8"/>
+		<Ctrl name="Mix" offset="940648" max="100" default="60"/>
+		<Ctrl name="Ref" offset="940688" max="10" default="5"/>
+		<Ctrl name="Level" offset="940728" max="150" default="100"/>
+	</Effect>
+	<Effect name="Comp+OD" offset="953020" category="Combination Fx">
+		<Ctrl name="Comp" offset="953072" max="10" default="3"/>
+		<Ctrl name="Gain" offset="953112" max="100" default="20"/>
+		<Ctrl name="Level" offset="953152" max="150" default="100"/>
+		<Ctrl name="Tone" offset="953192" max="100" default="50"/>
+	</Effect>
+	<Effect name="Comp+Phsr" offset="953260" category="Combination Fx">
+		<Ctrl name="Comp" offset="953312" max="10" default="6"/>
+		<Ctrl name="Rate" offset="953352" max="77" default="11"/>
+		<Ctrl name="Level" offset="953392" max="150" default="100"/>
+		<Ctrl name="Color" offset="953432" max="3" default="3">
+			<PrmTable>
+				<String>4 STG</String>
+				<String>8 STG</String>
+				<String>inv 4</String>
+				<String>inv 8</String>
+			</PrmTable>
+		</Ctrl>
+	</Effect>
+	<Effect name="Comp+AWah" offset="952780" category="Combination Fx">
+		<Ctrl name="Comp" offset="952832" max="10" default="6"/>
+		<Ctrl name="Sense" offset="952872" max="19" default="17">
+			<PrmTable>
+				<String>-10</String>
+				<String>-9</String>
+				<String>-8</String>
+				<String>-7</String>
+				<String>-6</String>
+				<String>-5</String>
+				<String>-4</String>
+				<String>-3</String>
+				<String>-2</String>
+				<String>-1</String>
+				<String>1</String>
+				<String>2</String>
+				<String>3</String>
+				<String>4</String>
+				<String>5</String>
+				<String>6</String>
+				<String>7</String>
+				<String>8</String>
+				<String>9</String>
+				<String>10</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="952912" max="150" default="100"/>
+		<Ctrl name="Reso" offset="952952" max="10" default="8"/>
+	</Effect>
+	<Effect name="Cho+Dly" offset="934900" category="Combination Fx">
+		<Ctrl name="ChoRt" offset="934952" max="49" default="24"/>
+		<Ctrl name="ChoMx" offset="934992" max="100" default="50"/>
+		<Ctrl name="DlyTm" offset="935032" max="2014" default="164"/>
+		<Ctrl name="DlyFB" offset="935072" max="100" default="40"/>
+		<Ctrl name="DlyMx" offset="935112" max="100" default="24"/>
+		<Ctrl name="Level" offset="935152" max="150" default="100"/>
+	</Effect>
+	<Effect name="Dly+Rev" offset="942476" category="Combination Fx">
+		<Ctrl name="DlyTm" offset="942528" max="1512" default="164"/>
+		<Ctrl name="DlyMx" offset="942568" max="100" default="24"/>
+		<Ctrl name="RevMx" offset="942608" max="100" default="60"/>
+		<Ctrl name="DlyFB" offset="942648" max="100" default="40"/>
+		<Ctrl name="Level" offset="942688" max="150" default="100"/>
+	</Effect>
+	<Effect name="Cho+Rev" offset="952540" category="Combination Fx">
+		<Ctrl name="ChoRt" offset="952592" max="49" default="24"/>
+		<Ctrl name="ChoMx" offset="952632" max="100" default="50"/>
+		<Ctrl name="RevMx" offset="952672" max="100" default="60"/>
+		<Ctrl name="Level" offset="952712" max="150" default="100"/>
+	</Effect>
+	<Effect name="FLG+VCho" offset="948916" category="Combination Fx">
+		<Ctrl name="FlgDp" offset="948968" max="100" default="40"/>
+		<Ctrl name="FlgRt" offset="949008" max="78" default="5"/>
+		<Ctrl name="ChoMx" offset="949048" max="100" default="50"/>
+		<Ctrl name="ChoRt" offset="949088" max="49" default="24"/>
+		<Ctrl name="Level" offset="949128" max="150" default="100"/>
+	</Effect>
+	<Effect name="PedalVx" offset="961332" category="Pedal Fx">
+		<Ctrl name="Freq" offset="961384" max="49" default="14"/>
+		<Ctrl name="DryMX" offset="961424" max="100" default="0"/>
+		<Ctrl name="Level" offset="961464" max="150" default="100"/>
+	</Effect>
+	<Effect name="PedalCry" offset="961132" category="Pedal Fx">
+		<Ctrl name="Freq" offset="961184" max="49" default="14"/>
+		<Ctrl name="DryMX" offset="961224" max="100" default="0"/>
+		<Ctrl name="Level" offset="961264" max="150" default="100"/>
+	</Effect>
+	<Effect name="TheVibe" offset="937780" category="Modulation">
+		<Ctrl name="Speed" offset="937832" max="50" default="25"/>
+		<Ctrl name="Depth" offset="937872" max="100" default="60"/>
+		<Ctrl name="Bias" offset="937912" max="100" default="48"/>
+		<Ctrl name="Wave" offset="937952" max="100" default="24"/>
+		<Ctrl name="Mode" offset="937992" max="1" default="1">
+			<PrmTable>
+				<String>VIBRT</String>
+				<String>CHORS</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="938032" max="150" default="100"/>
+	</Effect>
+	<Effect name="PDL Pitch" offset="945556" category="Pedal Fx">
+		<Ctrl name="Color" offset="945608" max="8" default="0"/>
+		<Ctrl name="Tone" offset="945648" max="10" default="10"/>
+		<Ctrl name="Bend" offset="945688" max="100" default="0"/>
+		<Ctrl name="Mode" offset="945728" max="1" default="0">
+			<PrmTable>
+				<String>Up</String>
+				<String>Down</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="945768" max="150" default="100"/>
+		<Ctrl name="Bend" offset="945688" max="100" default="0"/>
+	</Effect>
+	<Effect name="PDL MnPit" offset="945276" category="Pedal Fx">
+		<Ctrl name="Color" offset="945328" max="8" default="0"/>
+		<Ctrl name="Tone" offset="945368" max="10" default="10"/>
+		<Ctrl name="Bend" offset="945408" max="100" default="0"/>
+		<Ctrl name="Mode" offset="945448" max="1" default="0">
+			<PrmTable>
+				<String>Up</String>
+				<String>Down</String>
+			</PrmTable>
+		</Ctrl>
+		<Ctrl name="Level" offset="945488" max="150" default="100"/>
+	</Effect>
+</Effects>

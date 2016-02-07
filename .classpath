@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="architecture"/>
+	<classpathentry kind="src" path="controller"/>
+	<classpathentry kind="src" path="domain"/>
+	<classpathentry kind="src" path="connection"/>
+	<classpathentry kind="src" path="multistomp"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="main"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.eclipsesource.json"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SysexVerbal"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
