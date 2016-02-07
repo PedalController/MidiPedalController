@@ -6,17 +6,12 @@ This ambitious project aims to provide a single API for MIDI control pedal ANY m
 Test:
 --------
 
-### Gui
+This code provides an API for projects implementation.
 
-Execute EasyEditShare.jar (DoubleClick or java -jar EasyEditShare.jar). Open when the real multistomp has gone be connected on PC.
+Currently the projects that uses MidiPedalController are:
 
-![Live example](https://github.com/SrMouraSilva/JavaPedalMIDI/blob/master/example/Use_example.png?raw=true)
-
-### Terminal
-
-Execute br.com.srmourasilva.main.KeyboardController.java
- 
-(Old) example: https://www.youtube.com/watch?v=yWB6dpbQ1xc
+* [EasyEditShare](https://github.com/PedalController/EasyEditShare): Simple Zoom Edit&Share implementation for view the effects in the current patch (bank);
+* [PiPedalController](https://github.com/PedalController/PiPedalController): A project for extends the Zoom G3 guitar pedal controller.
 
 To control/detect what?
 -----------------------
@@ -47,13 +42,13 @@ To control/detect what?
  * PedalController.setEffectParam(int idEffect, int idParam, int value) 
  * PedalController.getAmountEffects()
 * All the multistomp options
- * PedalController.multistomp()
+ * PedalController.multistomp(): PedalController is a **façade** for the multistomp.
 
 
 Support:
 --------
 * PedalCompany.ZoomCorp
- * ~~PedalType.G2Nu~~ (basic, not tested)
+ * ~~PedalType.G2Nu~~ (basic, but not tested)
  * PedalType.G3
 
 | PedalType    | CommonCause    | Detects pedal change? | Request changes to pedal? |
@@ -143,7 +138,7 @@ Understand the structure:
 
 * Archicheture: The utils and exceptions of the system;
 * Controller: It offers a simple API to use;
-** MultistompChanger: 
+* * MultistompChanger: Filter: MidiMessage parsed -> Changes in Multistomp object  
 * Domain: The multistomp structure and message structure;
 * Connection: The connection with Real Multistomp and this lib;
 * Multistomp: Specific implementation for pedals;
