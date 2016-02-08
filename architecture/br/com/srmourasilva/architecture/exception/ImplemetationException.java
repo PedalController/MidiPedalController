@@ -5,4 +5,8 @@ public class ImplemetationException extends RuntimeException {
 	public ImplemetationException(String erro) {
 		super(erro);
 	}
+
+	public ImplemetationException(Exception e) {
+		super(e);
+	}
 }

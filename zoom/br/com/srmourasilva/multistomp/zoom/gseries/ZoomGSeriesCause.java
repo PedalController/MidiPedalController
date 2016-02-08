@@ -10,5 +10,6 @@ public enum ZoomGSeriesCause implements Cause {
 	LISSEN_ME,
 	YOU_CAN_TALK,
 	
+	@Deprecated
 	SET_EFFECT;
 }

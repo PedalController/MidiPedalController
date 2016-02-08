@@ -1,10 +1,12 @@
 package br.com.srmourasilva.multistomp.zoom.gseries;
 
+import static br.com.srmourasilva.multistomp.connection.codification.MessageEncoderUtil.customMessageFor;
+
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.ShortMessage;
-import javax.sound.midi.SysexMessage;
 
+import br.com.srmourasilva.architecture.exception.ImplemetationException;
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
 import br.com.srmourasilva.domain.message.MidiMessages;
@@ -58,7 +60,7 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 			try {
 				messageGenerated = new ShortMessage(SET_PATH, 0, patch, 0);
 			} catch (InvalidMidiDataException e) {
-				throw new RuntimeException(e);
+				throw new ImplemetationException(e);
 			}
 
 			return new MidiMessages().concatWith(messageGenerated);
@@ -72,7 +74,7 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 			boolean actived = cause == CommonCause.EFFECT_ACTIVE;
 			int byteActived = actived ? 0x01 : 0x00;
 	
-			MidiMessage messageGenerated = manupuleEffect(effect, SET_STATUS, byteActived);
+			MidiMessage messageGenerated = manipuleEffect(effect, Manipulation.SET_STATUS, byteActived);
 
 			return new MidiMessages().concatWith(lissenMeMessage())
 									 .concatWith(messageGenerated);
@@ -85,7 +87,7 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 			int param  = message.details().param;
 			int value  = (int) message.details().value;
 	
-			MidiMessage messageGenerated = manupuleEffect(effect, param + PARAM_EFFECT, value);
+			MidiMessage messageGenerated = manipuleEffectParam(effect, param, value);
 
 			return new MidiMessages().concatWith(messageGenerated);
 		};
@@ -96,17 +98,37 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 			int effect = message.details().effect;
 			int value  = (int) message.details().value;
 			
-			MidiMessage messageGenerated = manupuleEffect(effect, CHANGE_EFFECT, value);
+			MidiMessage messageGenerated = manipuleEffect(effect, Manipulation.CHANGE_EFFECT, value);
 	
 			return new MidiMessages().concatWith(messageGenerated);
 		};
 	}
 
-	private final int SET_STATUS = 0;
-	private final int CHANGE_EFFECT = 1;
-	private final int PARAM_EFFECT = 2; // Base
+	private enum Manipulation {
+		SET_STATUS(0),
+		CHANGE_EFFECT(1),
+		PARAM_EFFECT(2);
+		
+		private byte identifier;
 
-	private MidiMessage manupuleEffect(int effect, int type, int value) {
+		Manipulation(int identifier) {
+			this.identifier = (byte) identifier;
+		}
+		
+		public byte getIdentifier() {
+			return identifier;
+		}
+	}
+
+	private MidiMessage manipuleEffectParam(int effect, int posParam, int value) {
+		return manipuleEffectImpl(effect, posParam + Manipulation.PARAM_EFFECT.getIdentifier(), value);
+	}
+
+	private MidiMessage manipuleEffect(int effect, Manipulation type, int value) {
+		return manipuleEffectImpl(effect, type.getIdentifier(), value);
+	}
+
+	private MidiMessage manipuleEffectImpl(int effect, int type, int value) {
 		int value2 = value / 128;
 		value = value % 128;
 
@@ -175,13 +197,5 @@ public class ZoomGSeriesMessageEncoder implements MessageEncoder {
 		});
 				
 		return message -> new MidiMessages().concatWith(messageGenerated);
-	}
-
-	private SysexMessage customMessageFor(byte[] message) {
-		try {
-			return new SysexMessage(message, message.length);
-		} catch (InvalidMidiDataException e) {
-			throw new RuntimeException(e);
-		}
-	}
+	} 
 }

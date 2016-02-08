@@ -23,7 +23,7 @@ public class PedalController {
 	private List<OnMultistompListener> controllerListeners = new ArrayList<>();
 	private List<OnMultistompListener> realMultistompListeners = new ArrayList<>();
 
-	public PedalController(Multistomp pedal, Connection conection) throws DeviceNotFoundException {
+	public PedalController(Multistomp pedal, Connection conection, ChangerApplier applier) throws DeviceNotFoundException {
 		this.started = false;
 
 		this.pedal = pedal;
@@ -31,8 +31,7 @@ public class PedalController {
 		this.connection = conection;
 		// Real multistomp Change
 		this.connection.setListener(messages -> {
-			MultistompChanger changer = new MultistompChanger(this);
-			messages.forEach(message -> changer.attempt(message));
+			messages.forEach(message -> applier.attempt(message, this));
 
 			notify(realMultistompListeners, messages);
 		});

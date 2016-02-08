@@ -8,6 +8,8 @@ import br.com.srmourasilva.multistomp.connection.Connection;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
 import br.com.srmourasilva.multistomp.connection.codification.MessageEncoder;
 import br.com.srmourasilva.multistomp.connection.midi.MidiConnection;
+import br.com.srmourasilva.multistomp.controller.ChangerApplier;
+import br.com.srmourasilva.multistomp.controller.CommonChangerApplier;
 import br.com.srmourasilva.multistomp.zoom.gseries.ZoomGSeriesMessageDecoder;
 import br.com.srmourasilva.multistomp.zoom.gseries.ZoomGSeriesMessageEncoder;
 import br.com.srmourasilva.multistomp.zoom.g2nu.ZoomG2Nu;
@@ -33,5 +35,10 @@ public class ZoomG2NuType implements PedalType {
 	@Override
 	public MessageDecoder generateDecoder() {
 		return new ZoomGSeriesMessageDecoder();
+	}
+
+	@Override
+	public ChangerApplier generateChangerApplier() {
+		return new CommonChangerApplier();
 	}
 }

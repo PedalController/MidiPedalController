@@ -29,6 +29,10 @@ public class ZoomGSeriesMessages {
 		return Messages.For(new Message(ZoomGSeriesCause.YOU_CAN_TALK));
 	}
 	
+	/**
+	 * @deprecated Use CommonCause.EFFECT_TYPE
+	 */
+	@Deprecated
 	public static Messages SET_EFFECT(int effectPos, int newEffect) {
 		Details details = new Details();
 		details.effect = effectPos;
