@@ -2,8 +2,9 @@ package br.com.srmourasilva.multistomp.zoom.gseries.decoder;
 
 import javax.sound.midi.MidiMessage;
 
+import br.com.srmourasilva.domain.message.Details;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Details;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
 import br.com.srmourasilva.util.MidiMessageTester;
@@ -38,7 +39,7 @@ public abstract class AbstractZoomGSeriesEffectParamDecoder implements MessageDe
 
 	@Override
 	public final Messages decode(MidiMessage message, Multistomp multistomp) {
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 
 		details.effect = message.getMessage()[EFFECT];
 		details.param = message.getMessage()[PARAM] - 2;
@@ -47,5 +48,5 @@ public abstract class AbstractZoomGSeriesEffectParamDecoder implements MessageDe
 		return decodeThe(details, multistomp);
 	}
 
-	protected abstract Messages decodeThe(Details details, Multistomp multistomp);
+	protected abstract Messages decodeThe(MultistompDetails details, Multistomp multistomp);
 }

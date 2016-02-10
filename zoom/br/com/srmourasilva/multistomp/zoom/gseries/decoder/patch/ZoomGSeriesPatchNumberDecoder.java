@@ -4,7 +4,9 @@ import javax.sound.midi.MidiMessage;
 
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
 import br.com.srmourasilva.util.MidiMessageTester;
@@ -32,9 +34,9 @@ public class ZoomGSeriesPatchNumberDecoder implements MessageDecoder {
 	}
 
     private Message generateMessageFor(int patchNumber) {
-        Message message = new Message(CommonCause.PATCH_NUMBER);
-		message.details().patch = patchNumber;
+    	MultistompDetails details = new MultistompDetails();
+        details.patch = patchNumber;
 
-		return message;
+		return new MultistompMessage(CommonCause.PATCH_NUMBER, details);
 	}
 }

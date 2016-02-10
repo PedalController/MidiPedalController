@@ -4,10 +4,12 @@ import javax.sound.midi.MidiMessage;
 
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
-import br.com.srmourasilva.multistomp.zoom.gseries.ZoomG3v2Pedals;
+import br.com.srmourasilva.multistomp.zoom.gseries.ZoomG3v2Effects;
 import br.com.srmourasilva.sysex.SysexVerbal;
 
 public class ZoomGSeriesPatchEffectsTypeDecoder implements MessageDecoder {
@@ -27,11 +29,13 @@ public class ZoomGSeriesPatchEffectsTypeDecoder implements MessageDecoder {
 		Messages messages = Messages.Empty();
 		
 		for (int i=0; i<6; i++) {
-			Message msg = new Message(CommonCause.EFFECT_TYPE);
-		    msg.details().effect = i;
-		    msg.details().value = ZoomG3v2Pedals.instance.getEffect(pedal(i, message));
-
-			messages = messages.concatWith(Messages.For(msg));
+			MultistompDetails details = new MultistompDetails();
+			
+		    details.effect = i;
+		    details.value = ZoomG3v2Effects.instance.getEffect(pedal(i, message));
+		    
+		    Message msg = new MultistompMessage(CommonCause.EFFECT_TYPE, details);
+			messages = messages.add(msg);
 		}
 
 		return messages;

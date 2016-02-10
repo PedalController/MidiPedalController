@@ -6,8 +6,9 @@ import java.util.Optional;
 
 import br.com.srmourasilva.domain.message.Cause;
 import br.com.srmourasilva.domain.message.CommonCause;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
 
 public class Effect implements OnMultistompListener {
 
@@ -80,10 +81,11 @@ public class Effect implements OnMultistompListener {
 			return;
 
 		for (Message message : messages) {
-			if (message.details().origin instanceof Param)
-				message.details().param = this.params.indexOf(message.details().origin);
+			MultistompDetails details = (MultistompDetails) message.details();
+			if (details.origin instanceof Param)
+				details.param = this.params.indexOf(details.origin);
 
-			message.details().origin = this;
+			details.origin = this;
 		}
 
 		listener.get().onChange(messages);

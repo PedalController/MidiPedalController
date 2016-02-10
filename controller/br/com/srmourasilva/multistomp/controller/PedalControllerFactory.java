@@ -26,9 +26,9 @@ public class PedalControllerFactory {
 		connection.setDecoder(pedalType.generateDecoder());
 		connection.setEncoder(pedalType.generateEncoder());
 		
-		ChangerApplier applier = pedalType.generateChangerApplier();
+		ChangeApplier applier = pedalType.generateChangerApplier();
 
-		return new PedalController(multistomp, connection, applier);
+		return new PedalControllerImpl(multistomp, connection, applier);
 	}
 
 	private static Connection generateConnection(PedalType pedalType, Multistomp multistomp) throws DeviceNotFoundException {

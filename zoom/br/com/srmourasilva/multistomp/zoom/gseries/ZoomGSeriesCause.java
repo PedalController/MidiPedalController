@@ -10,6 +10,10 @@ public enum ZoomGSeriesCause implements Cause {
 	LISSEN_ME,
 	YOU_CAN_TALK,
 	
-	@Deprecated
-	SET_EFFECT;
+	TUNER_MUTE_ON,
+	TUNER_MUTE_OFF,
+	TUNER_BYPASS_ON,
+	TUNER_BYPASS_OFF,
+	
+	CURRENT_PATCH_TAP_TEMPO;
 }

@@ -8,7 +8,6 @@ public enum CommonCause implements Cause {
 	 * To patch causes the patch change
 	 */
 	TO_PATCH,
-	GENERAL_VOLUME,
 
 	// Patch
 	/**

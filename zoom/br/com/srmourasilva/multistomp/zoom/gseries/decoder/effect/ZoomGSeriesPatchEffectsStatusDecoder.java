@@ -5,7 +5,9 @@ import javax.sound.midi.MidiMessage;
 import br.com.srmourasilva.domain.message.Cause;
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
 import br.com.srmourasilva.sysex.SysexVerbal;
@@ -40,9 +42,9 @@ public class ZoomGSeriesPatchEffectsStatusDecoder implements MessageDecoder {
     private Message generateMessageFor(int effect, boolean actived) {
         Cause cause = actived ? CommonCause.EFFECT_ACTIVE : CommonCause.EFFECT_DISABLE;
 
-        Message message = new Message(cause);
-        message.details().effect = effect;
+        MultistompDetails details = new MultistompDetails();
+        details.effect = effect;
 
-        return message;
+        return new MultistompMessage(cause, details);
     }
 }

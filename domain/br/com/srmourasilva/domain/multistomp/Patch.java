@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Optional;
 
 import br.com.srmourasilva.domain.message.CommonCause;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Details;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
 
 public class Patch implements OnMultistompListener {
 	private int id;
@@ -32,22 +33,22 @@ public class Patch implements OnMultistompListener {
 		this.effects.add(effect);
 		effect.setListener(this);
 		
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 		details.effect = this.effects.size()-1;
 		details.value = effect;
 
-		onChange(Messages.Empty().add(CommonCause.EFFECT_TYPE, details));
+		onChange(CommonCause.EFFECT_TYPE, details);
 	}
 
 	public final void setEffect(int index, Effect effect) {
 		this.effects.set(index, effect);
 		effect.setListener(this);
 		
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 		details.effect = index;
 		details.value = effect;
 
-		onChange(Messages.Empty().add(CommonCause.EFFECT_TYPE, details));	
+		onChange(CommonCause.EFFECT_TYPE, details);	
 	}
 
 	public String getName() {
@@ -57,11 +58,11 @@ public class Patch implements OnMultistompListener {
 	public void setName(String name) {
 		this.name = name;
 
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 		details.patch = this.id;
 		details.value = name;
 
-		onChange(Messages.Empty().add(new Message(CommonCause.PATCH_NAME, details)));
+		onChange(CommonCause.PATCH_NAME, details);
 	}
 
 	/*************************************************/
@@ -70,16 +71,21 @@ public class Patch implements OnMultistompListener {
 		this.listener = Optional.of(listener);
 	}
 
+	private void onChange(CommonCause cause, MultistompDetails details) {
+		this.onChange(Messages.For(new MultistompMessage(cause, details)));
+	}
+	
 	@Override
 	public void onChange(Messages messages) {
 		if (!listener.isPresent())
 			return;
 
 		for (Message message : messages) {
-			if (message.details().origin instanceof Effect)
-				message.details().effect = this.effects.indexOf(message.details().origin);
+			MultistompDetails details = (MultistompDetails) message.details();
+			if (details.origin instanceof Effect)
+				details.effect = this.effects.indexOf(details.origin);
 
-			message.details().origin = this;
+			details.origin = this;
 		}
 
 		listener.get().onChange(messages);

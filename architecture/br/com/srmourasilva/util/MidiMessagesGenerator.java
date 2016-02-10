@@ -2,7 +2,7 @@ package br.com.srmourasilva.util;
 
 import br.com.srmourasilva.domain.message.Cause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.message.MidiMessages;
 
 public class MidiMessagesGenerator {

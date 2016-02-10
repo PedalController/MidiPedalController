@@ -5,7 +5,7 @@ import br.com.srmourasilva.domain.multistomp.Multistomp;
 import br.com.srmourasilva.multistomp.connection.Connection;
 import br.com.srmourasilva.multistomp.connection.codification.MessageDecoder;
 import br.com.srmourasilva.multistomp.connection.codification.MessageEncoder;
-import br.com.srmourasilva.multistomp.controller.ChangerApplier;
+import br.com.srmourasilva.multistomp.controller.ChangeApplier;
 
 public interface PedalType {
 	
@@ -22,5 +22,5 @@ public interface PedalType {
 	MessageEncoder generateEncoder();
 	MessageDecoder generateDecoder();
 	
-	ChangerApplier generateChangerApplier();
+	ChangeApplier generateChangerApplier();
 }

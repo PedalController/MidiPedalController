@@ -2,9 +2,6 @@ package br.com.srmourasilva.main;
 
 import java.util.Scanner;
 
-import javax.sound.midi.InvalidMidiDataException;
-import javax.sound.midi.SysexMessage;
-
 import br.com.srmourasilva.architecture.exception.DeviceNotFoundException;
 import br.com.srmourasilva.architecture.exception.DeviceUnavailableException;
 import br.com.srmourasilva.multistomp.controller.PedalController;
@@ -42,7 +39,7 @@ public class KeyboardController {
 		this.in = new Scanner(System.in);
 
 		try {
-			//this.pedal = PedalControllerFactory.getPedal(PedalType.G2Nu);
+			//pedal = PedalControllerFactory.generateControllerFor(ZoomG3Type.G2Nu);
 			pedal = PedalControllerFactory.generateControllerFor(ZoomG3Type.class);
 			//pedal.addListener(message -> System.out.println(message));
 			pedal.on();
@@ -69,7 +66,6 @@ public class KeyboardController {
 		System.out.println(" - 'C': REQUEST_CURRENT_PATCH_NUMBER");
 		System.out.println(" - 'I': REQUEST_CURRENT_PATCH_DETAILS");
 		System.out.println(" - 'IO': REQUEST_SPECIFIC_PATCH_DETAILS('number' patch)");
-		System.out.println(" - 'S': SET_EFFECT(posEffect typeEffect)");
 		System.out.println(" - '?': ???");
 
 		System.out.println(" - 'Exit': To exit");
@@ -119,29 +115,14 @@ public class KeyboardController {
 
 			pedal.setEffectParam(idEffect, idParam, value);
 
-		} else if (action.equals("S")) {
-			int idEffect = Integer.parseInt(commands[1]);
-			int value = Integer.parseInt(commands[2]);
-
-			pedal.send(ZoomGSeriesMessages.SET_EFFECT(idEffect, value));
-
 		} else if (action.equals("?")) {
 			System.out.println("Recebe sempre: f0 7e 00 06 02 52 5a 00 00 00 32 2e 31 30 f7 ");
 			byte[] WHAT = {
 				(byte) 0xF0, (byte) 0x7E, (byte) 0x00,
 				(byte) 0x06, (byte) 0x01, (byte) 0xF7
 			};
-			
-			// FIXME
-			//pedal.sendMessage(customMessage(WHAT));
-		}
-	}
 
-	private SysexMessage customMessage(byte[] message) {
-		try {
-			return new SysexMessage(message, message.length);
-		} catch (InvalidMidiDataException e) {
-			throw new RuntimeException(e);
+			//pedal.send(MessageEncoderUtil.customMessageFor(WHAT));
 		}
 	}
 }

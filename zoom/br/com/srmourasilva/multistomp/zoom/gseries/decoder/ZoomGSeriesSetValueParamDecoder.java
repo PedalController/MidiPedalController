@@ -4,8 +4,8 @@ import javax.sound.midi.MidiMessage;
 
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Details;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
 import br.com.srmourasilva.domain.multistomp.Multistomp;
 
 /**
@@ -21,7 +21,7 @@ public class ZoomGSeriesSetValueParamDecoder extends AbstractZoomGSeriesEffectPa
 	}
 
 	@Override
-	protected Messages decodeThe(Details details, Multistomp multistomp) {
-		return Messages.For(new Message(CommonCause.PARAM_VALUE, details));
+	protected Messages decodeThe(MultistompDetails details, Multistomp multistomp) {
+		return Messages.For(new MultistompMessage(CommonCause.PARAM_VALUE, details));
 	}
 }

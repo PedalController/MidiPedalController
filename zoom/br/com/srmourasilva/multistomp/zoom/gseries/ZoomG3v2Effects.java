@@ -16,15 +16,15 @@ import com.eclipsesource.json.JsonValue;
 import br.com.srmourasilva.domain.multistomp.Effect;
 import br.com.srmourasilva.domain.multistomp.Param;
 
-public class ZoomG3v2Pedals {
+public class ZoomG3v2Effects {
 
-	public static final ZoomG3v2Pedals instance = new ZoomG3v2Pedals();
+	public static final ZoomG3v2Effects instance = new ZoomG3v2Effects();
 
 	private HashMap<Integer, String> effectsName;
 
 	private Map<String, JsonObject> jsonEffects;
 
-	private ZoomG3v2Pedals() {
+	private ZoomG3v2Effects() {
 		this.effectsName = new HashMap<>();
 
 		effectsName.put(0, "M-Filter");

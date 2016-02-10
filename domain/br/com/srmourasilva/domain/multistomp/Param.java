@@ -4,8 +4,8 @@ import java.util.Optional;
 
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Details;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
 
 public class Param {
 
@@ -40,23 +40,22 @@ public class Param {
 
 		this.currentValue = newValue;
 		
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 		details.value = currentValue;
 
-		notify(new Message(CommonCause.PARAM_VALUE, details));
+		notify(CommonCause.PARAM_VALUE, details);
 	}
 
 	private boolean isValidValue(int value) {
 		return !(value < minValue || value > maxValue);
 	}
 
-	private void notify(Message message) {
+	private void notify(CommonCause cause, MultistompDetails details) {
 		if (!listener.isPresent())
 			return;
+		details.origin = this;
 
-		message.details().origin = this;
-
-		listener.get().onChange(Messages.Empty().add(message));
+		listener.get().onChange(Messages.For(new MultistompMessage(cause, details)));
 	}
 
 	public final String getName() {

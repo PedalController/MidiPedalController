@@ -8,6 +8,7 @@ import br.com.srmourasilva.domain.message.Cause;
 import br.com.srmourasilva.domain.message.CommonCause;
 import br.com.srmourasilva.domain.message.Messages;
 import br.com.srmourasilva.domain.message.MidiMessages;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
 import br.com.srmourasilva.multistomp.connection.codification.MessageEncoder;
 import br.com.srmourasilva.util.MidiMessagesGenerator;
 import br.com.srmourasilva.util.MidiMessagesGenerator.MidiMessageGenerator;
@@ -37,7 +38,8 @@ public class ZoomG2NuMessageEncoder implements MessageEncoder {
 
 	private MidiMessageGenerator encodeMultistompChange() {
 		return message -> {
-			int patch = message.details().patch;
+			MultistompDetails details = (MultistompDetails) message.details();
+			int patch = details.patch;
 
 			MidiMessage messageGenerated = shortMessage(SET_PATH, 0, patch, 0);
 
@@ -47,7 +49,8 @@ public class ZoomG2NuMessageEncoder implements MessageEncoder {
 	
 	private MidiMessageGenerator encodeEffectChange(Cause cause) {
 		return message -> {
-			int effect = message.details().effect;
+			MultistompDetails details = (MultistompDetails) message.details();
+			int effect = details.effect;
 
 			boolean actived = cause == CommonCause.EFFECT_ACTIVE;
 

@@ -5,9 +5,10 @@ import java.util.List;
 
 import br.com.srmourasilva.architecture.exception.ImplemetationException;
 import br.com.srmourasilva.domain.message.CommonCause;
+import br.com.srmourasilva.domain.message.Message;
 import br.com.srmourasilva.domain.message.Messages;
-import br.com.srmourasilva.domain.message.Messages.Details;
-import br.com.srmourasilva.domain.message.Messages.Message;
+import br.com.srmourasilva.domain.message.multistomp.MultistompDetails;
+import br.com.srmourasilva.domain.message.multistomp.MultistompMessage;
 
 public abstract class Multistomp implements OnMultistompListener {
 
@@ -51,10 +52,10 @@ public abstract class Multistomp implements OnMultistompListener {
 
 		idCurrentPatch = index;
 		
-		Details details = new Details();
+		MultistompDetails details = new MultistompDetails();
 		details.patch = idCurrentPatch;
 
-		onChange(Messages.Empty().add(CommonCause.TO_PATCH, details));		
+		onChange(Messages.For(new MultistompMessage(CommonCause.TO_PATCH, details)));		
 	}
 
 	public List<Patch> patchs() {
@@ -89,10 +90,11 @@ public abstract class Multistomp implements OnMultistompListener {
 	@Override
 	public void onChange(Messages messages) {
 		for (Message message : messages) {
-			if (message.details().origin instanceof Patch)
-				message.details().patch = this.patchs.indexOf(message.details().origin);
+			MultistompDetails details = (MultistompDetails) message.details();
+			if (details.origin instanceof Patch)
+				details.patch = this.patchs.indexOf(details.origin);
 
-			message.details().origin = this;
+			details.origin = this;
 		}
 
 		listeners.forEach(listener -> listener.onChange(messages));
