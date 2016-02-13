@@ -19,7 +19,6 @@ To control/detect what?
 ### To detect:
 
 * **CommonCause.TO_PATCH** : Patch changed to specific patch
-* **CommonCause.GENERAL_VOLUME** : General volume changed
 * **CommonCause.PATCH_NUMBER** : Details of a patch number
 * **CommonCause.PATCH_VOLUME** : Details of a patch volume
 * **CommonCause.PATCH_NAME** : Details of a patch name
@@ -54,7 +53,6 @@ Support:
 | PedalType    | CommonCause    | Detects pedal change? | Request changes to pedal? |
 |--------------|----------------|-----------------------|---------------------------|
 | PedalType.G3 | TO_PATCH       | (x)                   | (x)                       |
-| PedalType.G3 | GENERAL_VOLUME | ( )                   | ( )                       |
 | PedalType.G3 | PATCH_NUMBER   | ( ) *                 | TO_PATCH equivalent       |
 | PedalType.G3 | PATCH_VOLUME   | ( )                   | ( )                       |
 | PedalType.G3 | PATCH_NAME     | (x)                   | ( )                       |
